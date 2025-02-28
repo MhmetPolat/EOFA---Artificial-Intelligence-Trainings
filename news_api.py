@@ -75,23 +75,23 @@ def delete_news(news_id):
 
 # CRUD Fonksiyonlarını Çalıştır
 if __name__ == "__main__":
-    print("\n🔹 Tüm Haberler:")
+    print("\n Tüm Haberler:")
     pprint(get_all_news())
 
-    print("\n🔹 Başlık İçeriğine Göre Haberler ('ut' içerenler):")
+    print("\n Başlık İçeriğine Göre Haberler ('ut' içerenler):")
     pprint(get_news_by_title("ut"))
 
-    print("\n🔹 User ID'ye Göre Haberler (User ID = 3):")
+    print("\n User ID'ye Göre Haberler (User ID = 3):")
     pprint(get_news_by_user(3))
 
-    print("\n🔹 Yeni Haber Ekleniyor...")
+    print("\n Yeni Haber Ekleniyor...")
     new_news = create_news("Yeni Teknoloji", "Python ile REST API Kullanımı", 1)
     pprint(new_news)
 
     if "data" in new_news:
-        print("\n🔹 Haber Güncelleniyor...")
+        print("\n Haber Güncelleniyor...")
         updated_news = update_news(new_news["data"]["id"], "Güncellenmiş Başlık", "Güncellenmiş İçerik")
         pprint(updated_news)
 
-        print("\n🔹 Haber Siliniyor...")
+        print("\n Haber Siliniyor...")
         pprint(delete_news(new_news["data"]["id"]))
