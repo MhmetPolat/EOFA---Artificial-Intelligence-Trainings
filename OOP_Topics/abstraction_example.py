@@ -12,7 +12,5 @@ class Kare(Sekil):
     def alan(self):
         return self.kenar**2
 
-
 kare1 = Kare(5)
 print(f"Karenin Alanı: {kare1.alan()}")
-
