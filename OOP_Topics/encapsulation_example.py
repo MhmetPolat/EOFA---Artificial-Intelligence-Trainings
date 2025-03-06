@@ -8,4 +8,3 @@ class BankaHesabi:
 hesap = BankaHesabi(1000)
 print(hesap.bakiye_goster())
 #print(hesap.__bakiye)  # Hata verir çünkü __bakiye özel bir değişkendir.
-     
