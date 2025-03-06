@@ -9,4 +9,3 @@ class Araba:
     
 araba1 = Araba("Toyota", "Corolla", 2022)
 print(araba1.bilgileri_goster())    
-    
